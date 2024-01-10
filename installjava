@@ -46,8 +46,8 @@ else
 	tar -xhf openjdk-21.0.1_linux-aarch64_bin.tar.gz
 
 	ee "\e[32m[*] \e[34mSeting-up %JAVA_HOME%..."
-	export JAVA_HOME=$PREFIX/share/jdk21
-	echo "export JAVA_HOME=$PREFIX/share/jdk21" >> $HOME/.profile
+	export JAVA_HOME=$PREFIX/share/jdk-21.0.1
+	echo "export JAVA_HOME=$PREFIX/share/jdk-21.0.1" >> $HOME/.profile
 
 	ee "\e[32m[*] \e[34mCoping Java wrapper scripts to bin..."
 	#I'm not 100% sure, but getting rid of bin contnent MAY cause some issues with %JAVA_HOME%, thus it's no longer moved - copied instead. Sorry to everyone short on storage.
